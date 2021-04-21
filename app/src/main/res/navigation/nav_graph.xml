@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.obstacles.hotline.ui.fragments.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/menu_screen">
+        <action
+            android:id="@+id/action_menuFragment_to_gameRulesFragment"
+            app:destination="@id/gameRulesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameRulesFragment"
+        android:name="com.obstacles.hotline.ui.fragments.GameRulesFragment"
+        android:label="GameRulesFragment"
+        tools:layout="@layout/game_rules_screen" >
+        <action
+            android:id="@+id/action_gameRulesFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameSettingsFragment"
+        android:name="com.obstacles.hotline.ui.fragments.GameSettingsFragment"
+        android:label="GameSettingsFragment"
+        tools:layout="@layout/game_settings_screen"/>
+    <fragment
+        android:id="@+id/levelFragment"
+        android:name="com.obstacles.hotline.ui.fragments.LevelFragment"
+        android:label="LevelFragment"
+        tools:layout="@layout/level_screen">
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1"
+            />
+        <action
+            android:id="@+id/action_levelFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment" />
+        <action
+            android:id="@+id/action_levelFragment_to_tryAgainFragment"
+            app:destination="@id/tryAgainFragment" />
+        <action
+            android:id="@+id/action_levelFragment_to_youWinFragment"
+            app:destination="@id/youWinFragment" />
+        <action
+            android:id="@+id/action_levelFragment_self"
+            app:destination="@id/levelFragment" />
+        <action
+            android:id="@+id/action_levelFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tryAgainFragment"
+        android:name="com.obstacles.hotline.ui.fragments.TryAgainFragment"
+        android:label="TryAgainFragment"
+        tools:layout="@layout/try_again_screen">
+        <action
+            android:id="@+id/action_tryAgainFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+        <action
+            android:id="@+id/action_tryAgainFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment" />
+        <action
+            android:id="@+id/action_tryAgainFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/youWinFragment"
+        android:name="com.obstacles.hotline.ui.fragments.YouWinFragment"
+        android:label="YouWinFragment"
+        tools:layout="@layout/you_win_screen">
+        <argument
+            android:name="level"
+            app:argType="integer"
+            android:defaultValue="1"
+            />
+        <action
+            android:id="@+id/action_youWinFragment_to_levelFragment"
+            app:destination="@id/levelFragment" />
+        <action
+            android:id="@+id/action_youWinFragment_to_gameSettingsFragment"
+            app:destination="@id/gameSettingsFragment" />
+        <action
+            android:id="@+id/action_youWinFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

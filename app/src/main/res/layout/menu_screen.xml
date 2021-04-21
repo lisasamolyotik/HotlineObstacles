@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="728dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/frame"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/play_light"
+        android:layout_width="@dimen/menu_lights_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/menu_lights_start_margin"
+        android:layout_marginTop="212dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menu_button_top_margin"
+        android:layout_marginEnd="@dimen/menu_button_end_margin"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/play_button"
+        app:layout_constraintBottom_toBottomOf="@id/play_light"
+        app:layout_constraintEnd_toEndOf="@id/play_light"
+        app:layout_constraintStart_toStartOf="@id/play_light"
+        app:layout_constraintTop_toTopOf="@id/play_light" />
+
+    <ImageView
+        android:id="@+id/settings_light"
+        android:layout_width="@dimen/menu_lights_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/menu_lights_start_margin"
+        android:layout_marginTop="284dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menu_button_top_margin"
+        android:layout_marginEnd="@dimen/menu_button_end_margin"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_button"
+        app:layout_constraintBottom_toBottomOf="@id/settings_light"
+        app:layout_constraintEnd_toEndOf="@id/settings_light"
+        app:layout_constraintStart_toStartOf="@id/settings_light"
+        app:layout_constraintTop_toTopOf="@id/settings_light" />
+
+    <ImageView
+        android:id="@+id/rules_light"
+        android:layout_width="@dimen/menu_lights_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/menu_lights_start_margin"
+        android:layout_marginTop="357dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/rules_button"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menu_button_top_margin"
+        android:layout_marginEnd="@dimen/menu_button_end_margin"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/rules_button"
+        app:layout_constraintBottom_toBottomOf="@id/rules_light"
+        app:layout_constraintEnd_toEndOf="@id/rules_light"
+        app:layout_constraintStart_toStartOf="@id/rules_light"
+        app:layout_constraintTop_toTopOf="@id/rules_light" />
+
+    <ImageView
+        android:layout_width="@dimen/screen_title_text_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="525dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/menu_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

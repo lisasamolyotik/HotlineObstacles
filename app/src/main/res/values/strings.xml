@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hotline Obstacles</string>
+    <string name="rules">Your main goal is to destroy the red block!
+To do this, move the blue block with your finger to shoot the ball. But beware of the stone blocks!!! <br/>With each level, the number of obstacles will increase.</string>
+</resources>

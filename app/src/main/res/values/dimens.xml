@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_lights_width">285dp</dimen>
+    <dimen name="menu_lights_start_margin">18dp</dimen>
+    <dimen name="settings_button_width">33dp</dimen>
+    <dimen name="menu_button_width">130dp</dimen>
+    <dimen name="menu_button_end_margin">18dp</dimen>
+    <dimen name="menu_button_top_margin">19dp</dimen>
+    <dimen name="screen_title_text_width">173dp</dimen>
+    <dimen name="options_button_width">47dp</dimen>
+</resources>
